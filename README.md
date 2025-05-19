@@ -76,7 +76,7 @@ print(f"{c1.name} ordered {len(c1.orders())} times")
 print(f"{cof1.name} was ordered {cof1.num_orders()} times")
 print(f"Average price for {cof1.name}: ${cof1.average_price():.2f}")
 print(f"Top {cof2.name} customer: {Customer.most_aficionado(cof2).name}")
-
+```
 ## Features
 
 - **Validation**: Strict type and value checking for all properties
