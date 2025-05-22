@@ -34,4 +34,8 @@ if __name__ == "__main__":
     print(f"{cof1.name} avg price: {cof1.average_price()}")
     
     # Customer who spent most on Latte
-    print(f"Top {cof2.name} customer: {Customer.most_aficionado(cof2).name}")
+    most_spender = Customer.most_aficionado(cof2)
+    if most_spender:
+        print(f"Top {cof2.name} customer: {most_spender.name}")
+    else:
+        print(f"No orders for {cof2.name}")
