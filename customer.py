@@ -29,9 +29,7 @@ class Customer:
 
     def create_order(self, coffee, price):
         # Create and add a new order for coffee at price
-        order = Order(self, coffee, price)
-        self._orders.append(order)
-        return order
+        return Order(self, coffee, price)
 
     @classmethod
     def most_aficionado(cls, coffee):

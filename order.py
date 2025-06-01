@@ -31,8 +31,7 @@ class Order:
 
     @customer.setter
     def customer(self, value):
-        # Import here to avoid circular import
-        from customer import Customer
+        from customer import Customer  # Avoid circular import at top
         if not isinstance(value, Customer):
             raise TypeError("Customer must be of type Customer")
         self._customer = value
@@ -44,8 +43,7 @@ class Order:
 
     @coffee.setter
     def coffee(self, value):
-        # Import here to avoid circular import
-        from coffee import Coffee
+        from coffee import Coffee  # Avoid circular import at top
         if not isinstance(value, Coffee):
             raise TypeError("Coffee must be of type Coffee")
         self._coffee = value

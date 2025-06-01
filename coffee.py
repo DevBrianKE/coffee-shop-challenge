@@ -1,8 +1,8 @@
 class Coffee:
     def __init__(self, name):
         # Initialize coffee with name and empty orders list
-        self.name = name  # Validate and set name
-        self._orders = []  # Store associated orders
+        self.name = name
+        self._orders = []
 
     @property
     def name(self):
